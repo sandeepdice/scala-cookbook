@@ -21,7 +21,16 @@ object MatchTest {
     };
 
     println(numberString);
-    
+
+    i =10000;
+    var defaultValueString = i match {
+      case 1 => "one"
+      case 2 => "two"
+      case default => "in default match"
+    };
+
+    println(defaultValueString);
+
     var str = "fsdfsdf"
     
     var strMatch = str match {
